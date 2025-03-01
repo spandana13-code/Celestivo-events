@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celestivo Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #efe7e7;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+
+    .navbar.hidden {
+      top: -80px;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 80px;
+      width: 80px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .navbar ul li a {
+      color: #e7cece;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #FF6F00;
+    }
+
+    /* Hero Section */
+    #hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(209, 162, 162);
+      overflow: hidden;
+    }
+
+    #hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #hero .content {
+      z-index: 1;
+    }
+
+    #hero h1 {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    #hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    #hero .cta-btn {
+      padding: 10px 30px;
+      background-color: #FF8C00;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    #hero .cta-btn:hover {
+      background-color: #FF6F00;
+    }
+
+    /* About Section */
+    #about {
+      padding: 50px 5%;
+      background-color: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    /* Services Section */
+    #services {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 5%;
+      background-color: #f9f9f9;
+    }
+
+    .service {
+      position: relative;
+      width: 30%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .service img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .service .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      z-index: 1;
+      transition: background 0.3s;
+    }
+
+    .service:hover .overlay {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="c:\Users\WIN\Pictures\Screenshots\Screenshot 2024-12-15 194153.png" alt="Celestivo Events Logo">
+      <span>Celestivo Events</span>
+    </div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <video autoplay muted loop>
+      <source src="C:\Users\WIN\Downloads\WhatsApp Video 2024-12-18 at 14.59.24 (1).mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>Where Every Event Feels Celestial</h1>
+      <p>Turning Dreams into Unforgettable Memories</p>
+      <a href="#services" class="cta-btn">Choose Your Occasion</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Celestivo Events, we believe that every occasion deserves to feel truly celestial. With a passion for creating timeless memories, we specialize in curating events that reflect your dreams and leave a lasting impression. From grand weddings to intimate birthdays and fully customized celebrations, our team of creative professionals ensures every detail is tailored to perfection. With an eye for elegance, a touch of luxury, and seamless execution, we turn your special moments into unforgettable experiences. Let us bring your vision to life and make every celebration a story worth telling.From grand weddings to intimate celebrations, we ensure every detail is tailored to perfection. <p>
+
+  
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="service">
+      <a href="wedding.html">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\0235fede5fadab6faf132f6724c7e364.jpg" alt="Weddings">
+      <div class="overlay">
+        <h2>Weddings</h2>
+      </div>
+    </a>
+    </div>
+    <div class="service">
+      <a href="birthday.html">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\78a8dd61d1ff8eb1fa05314b0ea3084f.jpg" alt="birthday">
+      <div class="overlay">
+        <h2>Birthdays</h2>
+      </div>
+    </a>
+    </div>
+    <div class="service">
+      <a href="custom.html">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\3e6ca98135e5d09001c2b11b7d7a75b8.jpg" alt="Custom Events">
+      <div class="overlay">
+        <h2>Custom Events</h2>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 20px;">
+      <!-- Logo Section -->
+      <div style="display: flex; align-items: center;">
+        <img src="c:\Users\WIN\Pictures\Screenshots\Screenshot 2024-12-15 194153.png" alt="Celestivo Events Logo"
+          style="height: 150px; margin-right: 30px;">
+        <span style="font-size: 1.2rem; font-weight: bold;"></span>
+      </div>
+
+      <!-- Address Section -->
+      <div style="text-align: left; margin: 10px;">
+        <p>Address:</p>
+        <p>123 Celebration Avenue</p>
+        <p>Cityville, State, 456789</p>
+        <p>Contact Details: 8147882612</p>
+        <p>Email: Celestivoevents2024@gmail.com</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div style="text-align: right; margin: 10px;">
+        <p>Follow Us:</p>
+        <a href="https://facebook.com" target="_blank" style="margin-right: 10px;">
+          <i class="fa-brands fa-facebook fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://whatsapp.com" target="_blank" style="margin-right: 10px;">
+          <i class="fa-brands fa-whatsapp fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" style="margin-right: 10px; ">
+          <i class="fa-brands fa-twitter fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 10px;">
+
+      <p>&copy; 2024 Celestivo Events. All Rights Reserved.</p>
+    </div>
+  </footer>
+        <span style="font-size: 1.2rem; font-weight: bold;"></span>
+      </div>
+
+
+  <script>
+    // Hide Navbar on Scroll
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      const currentScrollPos = window.pageYOffset; //sets up an event listener on the window that triggers w=every time u scroll 
+      const navbar = document.querySelector(".navbar"); // capture the current scroll position 
+      if (prevScrollpos > currentScrollPos) {  // then it mean the user is scrolling down thus the
+        navbar.classList.remove("hidden");
+      } else {
+        navbar.classList.add("hidden");
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+</body>
+
+</html>
+

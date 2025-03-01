@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Packages - Celestivo Events</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap"
+    rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      color: #fff;
+      z-index: 1000;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #FF8C00;
+    }
+
+    /* Header Section */
+    header {
+      background: url('https://i.pinimg.com/736x/61/23/a9/6123a96029c664b85530ee3d158f0fec.jpg' ) no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Packages Section */
+    .packages {
+      padding: 50px 5%;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .packages h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .package-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .card-content p {
+      margin-bottom: 10px;
+    }
+
+    .card-content .price {
+      font-weight: bold;
+      color: #FF6F00;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      padding: 50px 5%;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="c:\Users\WIN\Pictures\Screenshots\Screenshot 2024-12-15 194153.png" alt="Celestivo Events Logo">
+      <span>Celestivo Events</span>
+    </div>
+    <ul>
+      <li><a href="dynamic.html">Home</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Birthday Packages</h1>
+  </header>
+
+  <!-- Packages Section -->
+  <section class="packages" id="packages">
+    <h2>Our Birthday Packages</h2>
+    <div class="package-cards">
+      <div class="card">
+        <img src="C:\Users\WIN\Pictures\Saved Pictures\7e22578056a3177109fecd3bb9b294bb.jpg" alt="Basic Package">
+        <div class="card-content">
+          <h3>Basic Package</h3>
+          <p>Simple event yet elegant. Includes venue, decoration, and photography.</p>
+          <p class="price">₹20,000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\WIN\Pictures\Saved Pictures\8c56fe24f20f974e92f5d35f567dbe6e.jpg" alt="Deluxe Package">
+        <div class="card-content">
+          <h3>Deluxe Package</h3>
+          <p>Enhanced package with catering, music + DJ, and custom decorations.</p>
+          <p class="price">₹60,000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\WIN\Pictures\Saved Pictures\7dcf65a74b3f4db57920e02e13fd9112.jpg" alt="Luxury Package">
+        <div class="card-content">
+          <h3>Luxury Package</h3>
+          <p>Premium services including luxury venues, entertainment,Disco party,Beverages included.</p>
+          <p class="price">₹1,50,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Birthday Gallery</h2>
+    <div class="gallery-images">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\7fd594e74fc34a79d8f41e42934ba353.jpg" alt="Birthday Image 1">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\e546717a10767b293de36d327641ab4f.jpg" alt="Birthday Image 2">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\3990b5e5bb905c13de63310269f2ce2c.jpg" alt="Birthday Image 3">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\632c7baaf6ab7d12e40162ece9826e70.jpg" alt="Birthday Image 4">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\bir5.jpg" alt="Birthday Image 5">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\bir6.jpg" alt="Birthday Image 6">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\bir7.jpg" alt="Birthday Image 7">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\bir8.jpg" alt="Birthday Image 8">
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 20px;">
+      <!-- Logo Section -->
+      <div style="display: flex; align-items: center;">
+        <img src="c:\Users\WIN\Pictures\Screenshots\Screenshot 2024-12-15 194153.png" alt="Celestivo Events Logo"
+          style="height: 150px; margin-right: 30px;">
+        <span style="font-size: 1.2rem; font-weight: bold;"></span>
+      </div>
+
+      <!-- Address Section -->
+      <div style="text-align: left; margin: 10px;">
+        <p>Address:</p>
+        <p>123 Celebration Avenue</p>
+        <p>Cityville, State, 456789</p>
+        <p>Contact Details: 8147882612</p>
+        <p>Email: Celestivoevents2024@gmail.com</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div style="text-align: right; margin: 10px;">
+        <p>Follow Us:</p>
+        <a href="https://facebook.com" target="_blank" style="margin-right: 10px;">
+          <i class="fa-brands fa-facebook fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://whatsapp.com" target="_blank" style="margin-right: 10px;">
+          <i class="fa-brands fa-whatsapp fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" style="margin-right: 10px; ">
+          <i class="fa-brands fa-twitter fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 10px;">
+
+      <p>&copy; 2024 Celestivo Events. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
