@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Packages - Celestivo Events</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap"
+    rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      color: #fff;
+      z-index: 1000;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #FF8C00;
+    }
+
+    /* Header Section */
+    header {
+
+
+      background-image: url('https://i.pinimg.com/736x/68/f7/65/68f7653a54e37437177906fff6114fdc.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 50px 20px;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: 'Playfair Display', serif;
+
+
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Packages Section */
+    .packages {
+      padding: 50px 5%;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .packages h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .package-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .card-content p {
+      margin-bottom: 10px;
+    }
+
+    .card-content .price {
+      font-weight: bold;
+      color: #FF6F00;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      padding: 50px 5%;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="c:\Users\WIN\Pictures\Screenshots\Screenshot 2024-12-15 194153.png" alt="Celestivo Events Logo">
+      <span>Celestivo Events</span>
+    </div>
+    <ul>
+      <li><a href="dynamic.html">Home</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Weddings Packages</h1>
+
+
+  </header>
+
+  <!-- Packages Section -->
+  <section class="packages" id="packages">
+    <h2>Our Wedding Packages</h2>
+    <div class="package-cards">
+      <div class="card">
+        <img src="C:\Users\WIN\Pictures\Saved Pictures\439b7b3b7bc1746dfde93dbfb8d48517.jpg" alt="Basic Package">
+        <div class="card-content">
+          <h3>Basic Package</h3>
+          <p>Simple yet elegant. Includes venue, decor, and photography.</p>
+          <p class="price">₹10,00,000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\WIN\Pictures\Saved Pictures\3d87a260862ef1720839494b983bf541.jpg" alt="Deluxe Package">
+        <div class="card-content">
+          <h3>Deluxe Package</h3>
+          <p>Enhanced package with catering, music, and custom decor.</p>
+          <p class="price">₹50,00,000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\WIN\Pictures\Saved Pictures\b8c6232385f105b6ff11e014512a5fab.jpg" alt="Luxury Package">
+        <div class="card-content">
+          <h3>Luxury Package</h3>
+          <p>Premium services including luxury venues, entertainment, and more.</p>
+          <p class="price">₹1,00,00,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Wedding Gallery</h2>
+    <div class="gallery-images">
+      <img src="c:\Users\WIN\Pictures\Saved Pictures\05650315f53f5482f4dd55be4f6527bc.jpg" alt="Wedding Image 1">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\ef18788889b35489316d3adfc9a51aed.jpg" alt="Wedding Image 2">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\e455f8ba5a8c33669af95655f7bca981.jpg" alt="Wedding Image 3">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\7759045e1be90a3c45b27b6420fe2c9d.jpg" alt="Wedding Image 4">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\d112494990a4c98506a9ab3fbead3076.jpg" alt="Wedding Image 5">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\a3b2ffa2debf2b01a09eeb0dfec5f843.jpg" alt="Wedding Image 6">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\0521b6d4a01ffe9d5e63515225a3380c.jpg" alt="Wedding Image 7">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\af81f6e2063fa7f9df63a2fd42683b62.jpg" alt="Wedding Image 8">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\20010e9e4240d2cf46778a2d02e87e3b.jpg" alt="Wedding Image 9">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\37e3f80f34e342bde69b11eca4ca0efb.jpg" alt="Wedding Image 10">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\7a94bed476b0dcdfbf96f7b6ef8c7b31.jpg" alt="Wedding Image 11">
+      <img src="C:\Users\WIN\Pictures\Saved Pictures\0a0f2c9c243c281971b19913b02e66db.jpg" alt="Wedding Image 12">
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 20px;">
+      <!-- Logo Section -->
+      <div style="display: flex; align-items: center;">
+        <img src="c:\Users\WIN\Pictures\Screenshots\Screenshot 2024-12-15 194153.png" alt="Celestivo Events Logo"
+          style="height: 150px; margin-right: 30px;">
+        <span style="font-size: 1.2rem; font-weight: bold;"></span>
+      </div>
+
+      <!-- Address Section -->
+      <div style="text-align: left; margin: 10px;">
+        <p>Address:</p>
+        <p>123 Celebration Avenue</p>
+        <p>Cityville, State, 456789</p>
+        <p>Contact Details: 8147882612</p>
+        <p>Email: Celestivoevents2024@gmail.com</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div style="text-align: right; margin: 10px;">
+        <p>Follow Us:</p>
+        <a href="https://facebook.com" target="_blank" style="margin-right: 10px;">
+          <i class="fa-brands fa-facebook fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://whatsapp.com" target="_blank" style="margin-right: 10px;">
+          <i class="fa-brands fa-whatsapp fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" style="margin-right: 10px; ">
+          <i class="fa-brands fa-twitter fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin fa-beat" style="color: #b79dcd; font-size: 2rem; margin: 10px;"></i>
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 10px;">
+
+      <p>&copy; 2024 Celestivo Events. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
